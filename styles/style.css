@@ -1,0 +1,267 @@
+
+.wrapper{
+    width: 100vw;
+    height: 100vw;
+}
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 91px;
+background: #FFFFFF;
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+border-radius: 0px;
+}
+.navbar-logo{
+font-family: 'Pacifico';       
+font-style: normal;
+font-weight: 400;
+font-size: 33px;
+line-height: 40px;
+color: #000000;
+margin-left: 135px;
+}
+.menu{ 
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 0.75em;
+letter-spacing: 2px;
+text-transform: uppercase;
+list-style-type: none;
+margin-right: 50px;
+}
+.menu li{
+    display: inline-block; 
+}
+a{
+text-decoration: none;
+margin-right: 20px;
+color: #6C6C6C;
+}
+a:hover{
+color: #AC1313;
+}
+.navbar-cart{
+margin-right: 10px;
+}
+.container{
+display: flex;
+flex-direction: row;
+height: 708px;
+background-image: url(./images/background.png);
+padding-top: 100px;
+}
+.left{
+width: 40%;
+padding-left: 135px;    
+}
+.right{
+width: 60%;
+}
+h1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+color: #000000;
+text-transform: capitalize;
+}
+
+h3{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #D77474;
+}
+.article1 p, .article2 p{
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #6C6C6C;
+}
+.button{
+width: 200px;
+height: 62px;
+left: 0%;
+right: 0%;
+top: 0px;
+background: #AC1313;
+border-radius: 0px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 22px;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.button:hover{
+background-color: green;
+cursor: pointer;
+}
+.section{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+height: 950px;
+background: #FFFFFF;
+border-radius: 0px;  
+}
+.heading{
+width: 100vw;
+height: 150px;
+}
+.item1{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 240px;
+height: 240px;
+background: #E4B366;
+border: 30px solid rgba(0, 0, 0, 0.05);
+border-radius: 50%;
+}
+.item2{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 240px;
+height: 240px;
+background: #F05B10;
+border: 30px solid rgba(0, 0, 0, 0.05);
+border-radius: 50%;
+}
+.item3{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 240px;
+height: 240px;
+background: #A21010;
+border: 30px solid rgba(0, 0, 0, 0.05);
+border-radius: 50%;
+}
+h2{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+text-align: center;
+color: #000000;
+}
+.section h3{
+text-align: center;   
+}
+.article1, .article2{
+width: 38%;
+height: 300px;
+margin-left: 60px;
+margin-right: 50px;
+}
+
+h4{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 29px;
+line-height: 36px;
+color: #000000;
+text-transform: capitalize;
+}
+.span{
+font-family:'Playfair Display';
+font-style: normal;
+font-weight: 400;
+font-size: 68px;
+line-height: 68px;
+text-align: center;
+color: #AC1313;
+}
+.item1 p, .item2 p, .item3 p{font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+@media screen and (max-width: 600px) {
+.header {   
+flex-direction: column;
+flex-wrap: wrap;
+}
+h1, h2, h3, h4{
+font-size: 14px;
+text-align: center;
+}
+.article1, .article2{
+height: fit-content;
+}
+.right{
+display: none;
+}
+.navbar-logo{
+font-size: 14pt;
+margin-left: 10px;
+}
+.left{
+padding-left: 100px;
+}
+.item1, .item2, .item3{
+width: 150px;
+height: 150px;
+}
+.article1, .article2{
+width: 100%;
+margin-left: 10px;
+margin-right: 10px;
+}
+}
+@media screen and (min-width: 601px) and (max-width: 900px){
+.header {   
+flex-direction: column;
+flex-wrap: wrap;
+}
+.left, .right{
+width: 50%;
+}
+.item1, .item2, .item3{
+flex-direction: row;
+flex-wrap: nowrap;
+width: 150px;
+height: 150px;
+justify-content: space-around;
+margin-left: 0;
+}
+.mainimage{
+max-width: 70%;
+max-height: 70%;
+}
+h1, h3, h4{
+font-size: 16px;
+text-align: left;
+}
+h2 {
+font-size: 14px;
+text-align: center;
+}
+.container{
+height: 400px;
+}
+}
+
